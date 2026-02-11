@@ -3,5 +3,9 @@
 @section('title','Tabellone Treni')
 
 @section('main-content')
-<h1>Funziona?</h1>
+<ul>
+  @foreach ($trains as $train)
+      <li>{{$train}}</li>
+  @endforeach
+</ul>
 @endsection
