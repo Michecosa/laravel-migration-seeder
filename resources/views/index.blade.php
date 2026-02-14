@@ -16,6 +16,7 @@
     <tbody>
     @foreach ($trains as $train)
     <x-single-train>
+      <x-slot:departureDate>{{$train->formatted_date}}</x-slot:departureDate>
       <x-slot:departureTime>{{$train['departure_time']}}</x-slot:departureTime>
       <x-slot:trainCode>{{$train['train_code']}}</x-slot:trainCode>
       <x-slot:destination>{{$train['arrival_station']}}</x-slot:destination>

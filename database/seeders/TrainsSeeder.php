@@ -18,6 +18,7 @@ class TrainsSeeder extends Seeder
             $newTrain->agency = $faker-> company();
             $newTrain->departure_station = $faker->city();
             $newTrain->arrival_station = $faker->city();
+            $newTrain->departure_date = $faker->dateTimeBetween('2026-01-01', '+1 year');
             $newTrain->departure_time = $faker->time();
             $newTrain->arrival_time = $faker->time();
             $newTrain->train_code = $faker->bothify('??#####');
